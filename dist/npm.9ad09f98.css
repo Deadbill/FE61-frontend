@@ -1,0 +1,151 @@
+body {
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    margin: 0px;
+}
+
+.create-div {
+    margin: 20px 10px;
+}
+
+.card {
+    font-weight: bold;
+    color: #337ab7;
+}
+
+.card img {
+    display: flex;
+    flex-direction: row;
+    max-height: 255px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.text-style {
+    text-align: center;
+}
+
+.container {
+    box-shadow: 0 0 10px 0 #000;
+    background: none;
+    height: auto;
+    background-size: cover;
+    background-image: url(/fbibanner-frontpage.3edfe9b6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 84px;
+}
+
+.brand {
+    display: flex;
+    position: relative;
+    height: 84px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.left-cont{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 68px;
+    margin: 0px 10px 0 20px;
+}
+
+.header-link{
+    display: flex;
+}
+
+.initials {
+    color: #fff;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    display: inline-block;
+    font-family: "Arial Black",Gadget,sans-serif;
+    font-weight: 600;
+    text-shadow: 0 4px 3px rgb(0 0 0 / 40%), 0 8px 13px rgb(0 0 0 / 10%), 0 18px 23px rgb(0 0 0 / 10%);
+}
+
+.fullname {
+    font-size: 1.4em;
+    margin: 4px 0 0;
+    width: 11em;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1.1em;
+    padding-left: 7px;
+    color: #fff;
+    text-shadow: 0 4px 3px rgb(0 0 0 / 40%), 0 8px 13px rgb(0 0 0 / 10%), 0 18px 23px rgb(0 0 0 / 10%);
+}
+
+.brand-footer {
+    display: flex;
+    position: relative;
+    height: 130px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-footer {
+    background-color: black;
+    height: 100%;
+}
+
+.social-icons {
+    text-decoration: none;
+}
+
+.social-icons ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: #bbb;
+    margin: 0px;
+}
+
+.social-icons li {
+    margin-left: 10px;
+}
+
+.social-link {
+    color: #bbb;
+    font-size: 40px;
+    transition: fill .3s ease-in;
+}
+
+.agency-contact {
+    color: #bbb;
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.agency-contact h3 {
+    margin: 0px;
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+
+.footer-container {
+    height: 100%;
+}
+
+
+/*# sourceMappingURL=/npm.9ad09f98.css.map */

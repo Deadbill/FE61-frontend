@@ -1,75 +1,25 @@
-class LinkedList {
-    constructor() {
-        this.root = {
-            data: null,
-            next: null,
-        };
-    }
+import Header from "./src/components/header/Header";
+import App from "./src/components/App";
+import Footer from "./src/components/Footer/Footer";
+import showToast from 'native-toast';
 
-    add(valueToAdd, valueAfter) {
+;(async () => {
+    const app = await App();
 
-        if(valueToAdd === valueAfter) {
-            console.log('equal arguments')
-            return
-        }
+    const root = document.getElementById('root');
+    root.append(app);
 
-        let targetNode = this.find(valueAfter);
-        let newNode = {
-            data: valueToAdd,
-            next: targetNode.next,
-        };
+})();
 
-        targetNode.next = newNode;
-    }
+const addHeader = Header();
+root.before(addHeader);
 
-    delete(value) {
-        let nodeForDelete = this.find(value);
-        let targetNode =this.root;
+const addFooter = Footer();
+root.after(addFooter);
 
-        while (targetNode.next !== null && targetNode.next.data !== value) {
-            targetNode = targetNode.next;
-        }
-
-        targetNode.next = nodeForDelete.next;
-
-    }
-
-    print() {
-        console.log(this.root);
-    }
-
-    append(value) {
-        const node = {
-            data: value,
-            next: null,
-        };
-
-        let lastNode = this.root;
-        while (lastNode.next !== null) {
-            lastNode = lastNode.next;
-        }
-
-        lastNode.next = node;
-    }
-
-    find(value) {
-        let targetNode =this.root;
-
-        while (targetNode.data !== value && targetNode.next !== null) {
-            targetNode = targetNode.next;
-        }
-
-        return targetNode.data === value ? targetNode : null;
-    }
-}
-
-const linkedList1 = new LinkedList();
-linkedList1.append(1);
-linkedList1.append(2);
-linkedList1.append(21);
-linkedList1.append(43);
-linkedList1.append(111);
-linkedList1.add(22, 21);
-linkedList1.delete(111);
-linkedList1.print();
-console.log(linkedList1.root);
+showToast({
+    message: 'If you know or have seen any of these people, call 911',
+    position: 'center',
+    rounded: true,
+    timeout: 6000,
+})

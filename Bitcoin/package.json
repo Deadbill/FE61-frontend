@@ -1,0 +1,31 @@
+{
+  "name": "bitcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "parcel": "^2.1.1",
+    "sass": "^1.48.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chart.js": "^3.7.0"
+  }
+}

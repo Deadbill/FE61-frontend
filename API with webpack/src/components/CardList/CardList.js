@@ -1,4 +1,4 @@
-import Card from '../Card/Card';
+import Card from '../Card/Card.js';
 
 const CardList = (props) => {
   const container = document.createElement('div');
